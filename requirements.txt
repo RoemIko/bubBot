@@ -1,5 +1,6 @@
 discord.py==1.7.3
 requests==2.27.1
+schedule==1.1.0
 virustotal_python==1.0.0
 zc==0.1.1
 zc.lockfile==2.0

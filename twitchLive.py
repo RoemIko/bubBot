@@ -1,7 +1,9 @@
+#!/usr/bin/python3
 import time
 import sys
 import configparser
 
+import schedule 
 import requests
 import zc.lockfile
 
@@ -262,9 +264,15 @@ def main():
             print("Stream is not live. Waiting 5 seconds to retry...")
             time.sleep(5)
 
+def job():
+    config()
+    get_lock()
+    authorize()
+    main()
+
+schedule.every().day.at("00:00").do(job)
+
 while True:
-    if __name__ == "__main__":
-        config()
-        get_lock()
-        authorize()
-        main()
+    print("Restarting Python Program...")
+    schedule.run_pending()
+    time.sleep(1)

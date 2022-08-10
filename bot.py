@@ -1,12 +1,10 @@
 # Bub's personal bot made by ᴿᵒᵉᵐɥɔʇıl⅁. Do not redistribute without my permission.
 # You can contact me for getting your own bot. Or using Bub with your own name.
-# Bub.exe V 2.0.2
+# Bub.exe V 2.0.3
 
 """"
 What's new?
-- Made BuB a DDR (Discord Detection and Response)
-- Fixed welcome message
-- Added badlink database send
+- Added userinfo
 
 To do
 - better names :)
