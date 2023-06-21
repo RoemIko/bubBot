@@ -1,0 +1,6 @@
+.idea
+.vscode
+ffmpeg*
+venv
+.env
+lock.lock
